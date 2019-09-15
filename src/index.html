@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>FizzBuzz</title>
+</head>
+<body>
+        <h3 class="ui block header">
+                Fizz Buzz
+        </h3>
+    
+    <h2 class="ui header">
+            <img src="https://semantic-ui.com/images/icons/plugin.png">
+            <div class="content">
+              Game rules
+              <div class="sub header">Players take turns counting up from one, replacing any number that is divisible by three with the word 'fizz', any number divisible by five with the word 'buzz', and any number divisible by both three and five to be replaced with 'fizz buzz'.</div>
+            </div>
+    </h2>
+    
+    
+        <div class="ui input focus">
+                <input type="text" id="value" placeholder="Number">
+        </div>
+        <button type="submit" value="Check" id="button" class="ui purple basic button">Check</button>
+    
+    
+    <div id="display_answer"></div>
+</body>
+
+<script src="js/fizzbuzz.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            let button = document.getElementById('button')
+            let displayDiv = document.getElementById('display_answer')
+            button.addEventListener('click', () =>{
+                let value = document.getElementById('value').value
+                let fizzBuzz = new FizzBuzz
+                let result = fizzBuzz.check(value)
+                displayDiv.innerHTML = result;
+            })
+        })
+    </script>
+</html>

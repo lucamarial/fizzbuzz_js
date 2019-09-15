@@ -1,0 +1,70 @@
+body {
+  background-image: url('https://pbs.twimg.com/media/DGujJp7U0AAHlOm.png'); 
+  background-size: cover;
+  margin: 10%;
+  font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+}
+
+.ui.header {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.ui.block.header {
+  text-align: center;
+  background-color: rgb(250, 213, 164);
+  border-color: rgb(172, 80, 20);
+  border-width: 2px;
+  font-size: 40px;
+}
+
+.ui.input.focus {
+  text-align: center;
+  margin: auto;
+  display: block;
+  margin-top: 50px;
+  
+}
+
+#value {
+  height: 60px;
+  width: 300px;
+  font-size: 20px;
+}
+
+ui.input {
+  font-size: 20px;
+}
+
+.ui.input.focus>input {
+  border-color: #a585d9;
+  border-width: 2px;
+  background: #fff;
+}
+
+
+
+#button.ui.purple.basic.button {
+  text-align: center;
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.content {
+}
+h2.ui.header.sub.header{
+  font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+  font-size: 50px
+}
+
+#text {
+  font-size: 50px
+}
+
+#display_answer {
+  font-size: 30px;
+  text-align: center;
+  margin-top: 30px;
+}
+
